@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Test AJAX page</title>
+  <link rel="stylesheet" type="text/css" href="./lab_styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">Test AJAX page</div>
+      <button class="button" onclick="loadData()">Load Some JSON</button>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+  </div>
+  <script>
+  function loadData() {
+    fetch('ajax_sample.json')   
+      .then(res => res.json()) 
+      .then(data => data.map(both))     // both function will get name & code, with space inbetween  
+      .then(data => {
+
+        for(i in data){                 // will iterate through & check for uniqueness 
+          let unique = true;
+        }
+
+        let content = document.querySelector(".content");
+        let ol = document.createElement("ol");
+
+        for(let i = 0; i < 15; i ++){
+          const selectNumber = getRandomIntInclusive(0,242);
+          let el = document.createElement("li");
+          el.innerText = data[selectNumber];
+
+          ol.appendChild(el);
+        }
+
+        content.appendChild(ol);
+        return data;
+      }
+    )
+
+  }
+  function both(item) {
+    let NameAndCode = [item.name,item.code].join(" ");
+    return NameAndCode;
+  }
+
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+</script>
+</body>
+
+</html> 
