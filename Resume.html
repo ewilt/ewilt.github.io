@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="" />
+
+  <title>A Resume for Emily Wilt</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+      background: rgb(28, 40, 46);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: rgb(163, 202, 183);
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1125px;
+      margin: 0px auto 0px;
+      padding: 45px;
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+    .header {
+      margin-bottom: 35px;
+      text-align: center;
+    }
+    /*Name*/
+    .full-name {
+      font-size: 55px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px rgb(100, 191, 194);
+      margin-bottom: 9px;
+      font-weight: 550;
+    }
+    /*Contact Information*/
+    .contact-information {
+      margin-bottom: 15px;
+      font-size: 25px;
+      font-weight: 300;
+      text-align: center;
+    }
+    a:link,
+    a:visited {
+      color: pink;
+    }
+    .divider {
+      height: 10 px;
+      display: inline-block;
+      margin: 0px 10px;
+    }
+    /*Image*/
+    .cover_image {
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 30px;
+      width: 300px;
+      height: 400px;
+      border-radius: 50%;
+    }
+    /*About*/
+    .about {
+      margin-bottom: 45px;
+    }
+    .detail {
+      display: flex;
+    }
+    /*Section Titles*/
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    /*Employment Experience*/
+    .duration {
+      font-size: 21px;
+      margin-top: 15px;
+      color: rgb(207, 166, 218);
+    }
+    .position,
+    .employer {
+      font-size: 25px;
+      color: pink;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 40%;
+    }
+    /*Education*/
+    .d {
+      font-size: 25px;
+      margin-top: 15px;
+      color: rgb(207, 166, 218);
+    }
+    .school,
+    .grad {
+      font-size: 21px;
+      color: pink;
+      margin-bottom: 5px;
+    }
+    /*Skills*/
+    .left,
+    .right {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      margin-bottom: 45px;
+    }
+    /*Leadership & Tech Ex*/
+    .proj {
+      font-size: 25px;
+      margin-top: 15px;
+      color: rgb(207, 166, 218);
+      margin-bottom: 5px;
+    }
+    .semester {
+      font-size: 22px;
+      margin-top: 15px;
+      color: pink;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="full-name">
+        <span class="first-name">Emily</span>
+        <span class="last-name">Wilt</span>
+      </div>
+      <div class="contact_information">
+        <span class="email-address">ewilt1@umd.edu</span>
+        <span class="divider">|</span>
+        <span class="phone-number">443-xxx-xxxx</span>
+        <span class="divider">|</span>
+        <a href='https://www.linkedin.com'>Linkedin</a>
+      </div>
+      <img class="cover_image" src="resumepic.jpg" />
+    </div>
+
+    <div class="about">
+      <span class="objective">
+        <h2>- Objective -</h2>
+      </span>
+      <span class="description">I am interested in pursuing an Entry-Level Software Developer position. I would
+        enjoy being able to maintain a SQL database, employ object-oriented programming methodology to extend
+        upon existing code, write, and test code.
+      </span>
+    </div>
+
+    <div class="detail">
+      <div class="section">
+        <div class="section_title"><h2>- Employment Experience -</h2></div>
+          <div class="section_item">
+            <span class="duration">August 2019 - Present</span><br>
+            <span class="position">Receiving Clerk,</span>
+            <span class="employer">BJ's Wholesale Club</span><br><br>
+            <span class="description">As a Receiving Clerk, I am solely responsible for maintaing accurate
+              pricing throughout the entire club. I also handle the club's negative inventory; verifying whether
+              or not each item is actually missing, checking open purchasing orders, etc. Additionally, I am
+              responsible for verifying receipts and exceptions in our receicing bay, which involves
+              authenticating vendor purchase orders, and filing these documents appropriately.
+            </span>
+            </div><br><br>
+          <div class="section_item">
+            <span class="duration">November 2018 - August 2019</span><br>
+            <span class="position">Asset Protection Associate, </span>
+            <span class="employer">BJ's Wholesale Club</span><br><br>
+            <span class="description">As a member of the AP team, I greeted members as they entered the club,
+              checking and reviewed receipts as members exited, and kept a categorized log of all asset
+              recoveries.
+              </span>
+            </div><br><br>
+          <div class="section_item">
+            <span class="duration">April 2016 - May 2019</span><br>
+            <span class="position">Snowball Maker, </span>
+            <span class="employer">Icy Delights Inc.</span><br><br>
+            <span class="description">As a snowball maker, I interacted with customers and operated a POS
+              system. I maintained the cleanliness of the store, including stocking. I often worked with two
+              to three coworkers at a time, where I would take a leadership role while working as part of a
+              team.
+              </span>
+            </div><br><br>
+
+      <div class="section">
+      <div class="section_title"><h2>- Education -</h2></div>
+      <div class="section_item">
+        <span class="d">Bachelor's of Science in Information Science </span><br>
+        <span class="school">University of Maryland, College Park -- </span>
+        <span class="grad">May 2020 </span><br>
+        <span class="description">Pursuing a degree in Information Science, in the College of Information
+          Studies at the University of Maryland, College Park. Completed coursework concentrated in
+          human-computer interaction, business, database and web development, and data analytics.
+        </span>
+      </div><br><br>
+      <div class="section_item">
+        <span class="d">High School Diploma </span><br>
+        <span class="school">Patapsco High School -- </span>
+        <span class="grad">May 2016 </span>
+        <span class="description"></span>
+      </div>
+      </div><br><br>
+
+      <div class="section">
+        <div class="section_title"><h2>- Skills -</h2></div>
+          <div class="left"/>
+            <ul>
+              <li>Proficiant in SQL and Python</li>
+              <li>Experience with constructing metadata schemas in JSON</li>
+              <li>Experience with translating JSON metadata into Python, and performing analyses</li>
+              <li>Experience with R, Tableau, and OpenRefine, statistical software; cleaning raw data,
+                manipulating data, performing analysis, and then creating visualizations of the results</li>
+            </ul>
+            </div>
+          <div class="right"/>
+            <ul>  
+              <li>Experience in writing SQL queries within Python</li>
+              <li>Experience with using Adobe XD to design and model a user interface</li>
+              <li>Experience in writing HTML, CSS, and Javascript in order to create webpages</li>
+              </ul>
+            </div>
+        </div><br><br>
+
+      <div class="section">
+        <div class="section_title"><h2>- Leadership & Technical Experience -</h2>
+          <div class="section_item">
+          <span class="proj">"Terpnite" Text-Based Game, </span>
+          <span class="semester">Spring 2018 </span><br>
+          <span class="description">Led a group of students, as the team manager, in coding a UMD-themed,
+            text-based game, inspired by Fortnite. Through a series of user inputs and loops, users were
+            allowed to make choices and move throught the UMD campus map, in order to survive the game.
+            After completing the text-based version, framework was created to make a graphical interface.
+            </span>
+            </div><br>
+          <div class="section_item">
+          <span class="proj">Object Oriented BlackJack, </span>
+          <span class="semester">Fall 2018 </span><br>
+          <span class="description">Created a SQL database, through hardcoding, including fourteen tables,
+            and three views. Manually coded the framework of the system, and entered all data. Performed
+            maintenance on the database throughout the academic term.
+            </span>
+            </div><br>
+          <div class="section_item">
+          <span class="proj">Peer Mentor in the iSchool, </span>
+          <span class="semester">Spring 2019 </span><br>
+          <span class="description">Assisted the professor during instruction, and mentored students in and
+            out of the classroom, both on coursework (Database Design and Modeling materials) and iSchool
+            related topics.
+            </span>
+            </div><br>
+          <div class="section_item">
+          <span class="proj">Web Scraping for Job Listings, </span>
+          <span class="semester">Spring 2019</span><br>
+          <span class="description">Experiemented with the Beautiful Soup library in Python to begin
+            web-scraping for job listings on Indeed.com.
+            </span>
+            </div><br>
+          <div class="section_item">
+          <span class="proj">Statical Analysis of GOT Deaths, </span>
+          <span class="semester">Spring 2019</span><br>
+          <span class="description">Using a Naive Bayes classifier, and ten-fold validation, performed analysis
+            on data about character deaths in the novel series A Song of Fire and Ice, in order to predict
+            character deaths in HBO's Game of Thrones television series.
+            </span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
